@@ -155,7 +155,7 @@ The kustomize-controller creates `kustomization.yaml` files similar to:
 cd ./deploy/prod && kustomize create --autodetect --recursive
 ```
 
-### What is the behavior of Kustomize used by Flux
+### What is the behavior of Kustomize used by Flux?
 
 We referred to the Kustomization CLI flags here, so that you can replicate the same behavior using the CLI.
 The behavior of Kustomize used by the controller is currently configured as following:
@@ -172,6 +172,11 @@ utility script is available](https://github.com/fluxcd/flux2-kustomize-helm-exam
 it runs `kustomize` locally or in CI with the same set of flags as
 the controller and validates the output using `kubeval`.
 {{% /alert %}}
+
+## Git questions
+
+### How do I onboard a private Git repository? 
+For instructions on using private Git repositories, see [onboarding private repositories](onboarding-private-repositories.md).
 
 ## Helm questions
 
