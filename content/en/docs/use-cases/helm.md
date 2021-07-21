@@ -49,10 +49,10 @@ Flux client:
 
 ```sh
 flux create source helm traefik --url https://helm.traefik.io/traefik
-flux create helmrelease --chart my-traefik \
+flux create helmrelease my-traefik --chart traefik \
   --source HelmRepository/traefik \
   --chart-version 9.18.2 \
-  --namespace traefik
+  --target-namespace traefik
 ```
 
 The main difference is that the Flux client will not imperatively create resources in the cluster.
